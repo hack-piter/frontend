@@ -1,0 +1,121 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+
+  & .btn {
+    font: var(--paragraph-4);
+    font-size: 20px;
+    color: var(--white);
+    padding: 10px 20px;
+    background-color: #FF645F;
+    cursor: pointer;
+    width: 240px;
+    transition: 0.3s all ease;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  & .submitButton {
+    font: var(--paragraph-4);
+    font-size: 20px;
+    color: var(--white);
+    padding: 10px 20px;
+    background-color: #FF645F;
+    cursor: pointer;
+    width: 240px;
+    transition: 0.3s all ease;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+
+  & .text {
+    text-align: center;
+    font: var(--paragraph-4);
+    color: var(--text);
+  }
+
+  & .video {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    & video {
+      object-fit: cover;
+    }
+  }
+
+  & .form {
+    width: 100%;
+    border-radius: 20px;
+
+    .fileWrapper {
+      padding: 60px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    & .url {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      & .urlInput {
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid #E1E5EA;
+        border-radius: 10px;
+        font: var(--paragraph-1);
+        font-size: 20px;
+        color: var(--text);
+        background-color: inherit;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      padding: 100px 30px;
+      border: 3px dashed #E1E5EA;
+      margin: 0 auto;
+      background-color: var(--white);
+      width: 100%;
+      border-radius: 20px;
+
+      &.dragOver {
+        background-color: #e0f7fa; // Highlight color when dragging over
+      }
+
+
+      & svg {
+        fill: var(--text);;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
