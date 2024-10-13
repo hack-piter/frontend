@@ -32,6 +32,14 @@
         margin: 0 auto;
         height: fit-content;
         object-fit: cover;
+
+    }
+    & .image {
+        width: 100%;
+        margin: 0 auto;
+        height: 600px;
+        width: 800px;
+        object-fit: cover;
     }
 
     & .videoWrapper {
